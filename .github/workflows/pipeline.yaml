@@ -25,13 +25,8 @@ jobs:
       - name: Fazer checkout
         uses: actions/checkout@v5
 
-      - name: Instalar Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-
-      - name: Rodar teste simples
-        run: node -e "conseole.log('Testando Node')"
+      - name: Teste simples com Node
+        run: node -e "console.log('Testando Node!')"
 
 
   gerar-arquivo:
